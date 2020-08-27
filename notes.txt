@@ -1,0 +1,34 @@
+Required NPM Packages
+1. express
+2. mongoose
+3. multer
+4. body-parser
+5. ejs
+6. dotenv
+7. lodash
+
+Main Entry Page 
+1. Header
+- Brand
+- Signup
+- Login
+- Business
+2. Main Content
+- Header
+- Carousel with sample products and stores and descriptions
+- Sample stores
+3. Footer
+- Social Media Links
+- Contact
+- Terms, Privacy, and Help
+- Copyright Statement
+
+User Page
+1. Navbar
+- Brand
+- Account
+- Logout
+- Stores Gallery (Default)
+- Products Gallery
+- Cart
+- Purchase History
