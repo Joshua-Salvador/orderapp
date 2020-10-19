@@ -4,11 +4,7 @@ const productSchema = require("./product.model").productSchema;
 
 const organizationSchema = new mongoose.Schema({
   orgName: String,
-  orgAddress: {
-    orgStreetAddress: String,
-    orgMunicipality: String,
-    orgCity: String,
-  },
+  orgAddress: String,
   orgEmail: String,
   password: String,
   orgProducts: [productSchema],

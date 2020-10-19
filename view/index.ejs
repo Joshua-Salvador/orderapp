@@ -3,11 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Order Up</title>
+    <title>Chart It</title>
   </head>
   <body>
     <header>
-      
+      <h1>Chart It</h1>
     </header>
+    <main>
+      <div class="form">
+        <form action="/organization/register" method="POST">
+          <div class="form-item-1">
+            <label for="orgName">
+              Name of Organization:
+            </label>
+            <input type="text" name="orgName" required>
+          </div>
+          <div class="form-item-2">
+            <label for="orgEmail">
+              Organization Email:
+            </label>
+            <input type="email" name="orgEmail" required>
+          </div>
+          <div class="form-item-3">
+            <label for="password">
+              Password:
+            </label>
+            <input type="password" name="password" required>
+          </div>
+          <div class="form-item-4">
+            <label for="orgAddress">
+              Address:
+            </label>
+            <input type="text" name="orgAddress" required>
+          </div>
+
+        </form>
+      </div>
+    </main>
   </body>
 </html>

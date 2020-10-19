@@ -27,14 +27,8 @@ router.route("/register").post((req, res) => {
   const orgName = req.body.orgName;
 
   if (findOrgName(orgName) === null) {
-    const orgStreetAddress = req.body.orgStreetAddress;
-    const orgMunicipality = req.body.orgMunicipality;
-    const orgCity = req.body.orgCity;
-    const orgAddress = {
-      orgStreetAddress,
-      orgMunicipality,
-      orgCity,
-    };
+
+    const orgAddress = req.body.orgAddress;
     const orgEmail = req.body.orgEmail;
     const orgProducts = findOrgProducts(orgName);
 
