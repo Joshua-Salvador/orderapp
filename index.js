@@ -40,6 +40,11 @@ passport.deserializeUser(Organization.deserializeUser());
 const product = require("./routes/product.route");
 const organization = require("./routes/organization.route");
 
+app.get("/", (req, res) => {
+  res.render("index");
+})
+
+
 app.use("/product", product);
 app.use("/organization", organization);
 const PORT = process.env.PORT || 3000;
